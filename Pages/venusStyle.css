@@ -1,0 +1,32 @@
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: linear-gradient(100deg,#cfd292,#90a2aa);
+}
+
+h1 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(148, 193, 180);
+    padding: 40px;
+}
+main {
+    margin: 30px;
+}
+h2 {
+    padding: 40px;
+}
+.video {
+    padding-top: 40px;
+}
+.volver {
+    text-decoration: none;
+    margin-left: 620px;
+    font-size: 20px;
+    font-weight: bold;
+
+}

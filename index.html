@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/icon" href="./resources/images/IconPlaneta.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Sitio Espacial</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container logo-nav-container">
+            <img class="logo" src="./solar-system.jpg" alt="LOGO">
+            <h1>Viaje Espacial: Sistema Solar</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#mercurio">Mercurio</a></li>
+                    <li><a href="#venus">Venus</a></li>
+                    <li><a href="#tierra">Tierra</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main" >
+        <section id="mercurio">
+            <h2>Mercurio</h2>
+            <img src="./resources/images/mercurio.jpg" width="400px" alt="Imagen de planeta Mercurio">
+            <p>De los 4 planetas interiores del Sistema Solar, Mercurio es el más pequeño. Muy denso, su estructura interna está dominada por su núcleo de hierro. Al ser el más cercano al Sol, experimenta variaciones extremas en la temperatura de su superficie, oscila entre –180 ºC y los + de 430 ºC.</p><br>
+            <audio controls>
+                    <!-- Source para reproducir distintos formatos -->
+                <source src="./resources/sonidos/Ad-Rolli.mp3" type="audio/mpeg">
+                <source src="">
+                <source src="">
+                Tu navegador no soporta audio 
+            </audio>
+            <a class="masInfo" href="./Pages/mercurio.html">Más información sobre el Planeta Mercurio</a>
+
+        </section>
+
+        <section id="venus">
+            <h2>Venus</h2>
+            <img src="./resources/images/venus_2.jpg" width="350" alt="Imagen de planeta Venus">
+            <p>Es el planeta más cálido del sistema solar. Es un planeta terrestre: pequeño y rocoso. Tiene una superficie activa, que incluye volcanes.</p><br>
+            <audio controls>
+                    <!-- Source para reproducir distintos formatos -->
+                <source src="./resources/sonidos/AI010_Hell.mp3" type="audio/mpeg">
+                <source src="">
+                <source src="">
+                Tu navegador no soporta audio 
+            </audio>
+            <a class="masInfo" href="./Pages/venus.html">Más información sobre el Planeta Venus</a>
+        </section>
+
+        <section id="tierra">
+            <h2>Tierra</h2>
+            <img src="./resources/images/tierra.jpg" width="300px" alt="Imagen del Paneta Tierra">
+            <p>Tercer planeta más alejado del sol, es el único lugar del universo en el que se ha confirmado que hay vida. Con un radio de 6371 kilómetros, la Tierra es el 5to planeta más grande del sistema solar, y es el único que se sabe que tiene agua.</p><br>
+            <audio controls>
+                    <!-- Source para reproducir distintos formatos -->
+                <source src="./resources/sonidos/AI030_Stumbli.mp3" type="audio/mpeg">
+                <source src="">
+                <source src="">
+                    Tu navegador no soporta audio 
+            </audio>
+            <a class="masInfo" href="./Pages/tierra.html">Más información sobre Planeta Tierra</a>
+        </section>
+
+        <section id="contacto">
+        
+            <h2>Contacto</h2>
+            <p>Tenes preguntas o comentarios? Contáctannos</p><br>
+            <form action="/formulario" method="POST">
+                <fieldset>
+                       <!-- dibuja un rectangulo -->
+                    <legend>información Personal</legend><br>
+                    <label for="inputNombre">Apellido y Nombre: </label>
+                    <input
+                        type="text" name="inputNombre" id="inputNombre" placeholder="Ingrese su Apellido y Nombre"
+                        title="Aca debe ingresar solo su Nombre de pila"
+                        required 
+                    />
+                    <br><br><br>
+
+                    <label for="correoElectronico">Correo Electrónico: </label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="inputemail" placeholder="Ingrese su Email" 
+                        required 
+                    />
+                    <br><br><br>
+
+                    <label for="telefono">Teléfono: </label>
+                    <input
+                        type="tel"
+                        name="telefono"
+                        id="inpuitTelefono" placeholder="+54 9 26-33515-3262" 
+                    />
+                    <br><br><br>
+                    <label for="">Fecha de Nacimiento</label>
+                    <input
+                        type="date"
+                        name="fecha"
+                        id="inputFecha"  
+                    />
+                    <br><br><br>
+                </fieldset><br><br>
+                    
+                <fieldset>
+                    <legend>Seguridad</legend><br>
+                    <label for="">Contraseña</label><br>
+                    <input
+                        type="password"
+                        id="passsword"
+                        name="contraseña"
+                        minlength="8"
+                        required
+                        placeholder="Minimo de ocho caracteres"
+                    />
+
+                </fieldset><br><br>
+
+                <fieldset>
+                    <legend>Mensaje</legend><br>
+                    <label for="mensaje">Deja tu Mensaje</label>
+                    <textarea id="mensaje"
+                        name="mensaje" 
+                        placeholder="" rows="5"></textarea>
+                </fieldset><br><br>
+
+                <fieldset>
+                    <legend>Nuevos elementos de HTML</legend><br>
+                    <input
+                        type="search"
+                        placeholder="Buscar ..."
+                        list="lenguajes"
+                        name="lista"
+                    />
+                    <datalist id="lenguajes" name="lista" ><br>
+                        <option>C++</option>
+                        <option>Javascript</option>
+                        <option>Java</option>
+                    </datalist>
+                </fieldset><br><br>
+                        <!-- Boton para enviar la info -->
+                <input class="boton" type="submit" value="E N V I A R">
+
+            </form>
+        </section> <br><br><br>
+    <footer>
+        <a class="volver" href="#top">Volver al inicio de la Página</a>
+        <br><br><br><br><br>
+    </footer>
+</body>
+</html>
